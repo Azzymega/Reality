@@ -2,8 +2,21 @@ package Reality.X86;
 
 public class DeviceManager {
 
+    private static DeviceManager Manager;
+
     private DeviceManager() {
 
+    }
+
+    public static DeviceManager GetInstance() {
+
+        if (Manager == null) {
+
+            Manager = new DeviceManager();
+
+        }
+
+        return Manager;
     }
 
     public static native void IOWriteB(long Port, byte Data);

@@ -18,8 +18,11 @@ public class System {
     }
 
     public static void main(int y) {
-        int x = 123;
-        println("asdf"+y);
+        String x = "[Entity] JVM Controls acquired!";
+
+        println(x+"\n [Entity] Initializing device manager");
+
+
     }
 
 }
